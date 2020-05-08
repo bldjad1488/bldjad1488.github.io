@@ -4,11 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 400;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
 
 .header_wrap {
     width: 100%;
     background-color: #EEEFF1;
+}
+
+.logo {
+    width: 48px;
+    height: 30px;
 }
 
 .header {
@@ -24,11 +37,22 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-a {
-    text-decoration: none;
+ul > li > a {
     padding-left: 40px;
+    padding: 20px 10px 20px 10px;
+    color: #000000;
+}
+
+ul > li > a:hover {
+    color: #34547A;
 }
 
 .header_banner {
@@ -58,16 +82,20 @@ a {
 
 .header_banner-right > h1 {
     margin-bottom: 10%;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .header_banner-right > p {
     margin-bottom: 10%;
+    color: #727272;
+    font-size: 16px;
 }
 
 .button {
     background-color: #34547A;
-    width: 200px;
-    height: 60px;
+    width: 160px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,4 +104,189 @@ a {
 .button > p > a{
     padding: 0;
     color: white;
+}
+
+
+/* About me */
+
+.about_me-wrap {
+    width: 100%;
+    background-color: white;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about_me > h3 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.about_me > p {
+    color: #727272;
+    font-size: 16px;
+}
+
+
+/* My projeects */
+
+.my_projects-wrap {
+    width: 100%;
+    background-color: #34547A;
+}
+
+.my_projects {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.projects-block {
+    display: flex;
+    flex: row;
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+.projects-block > p {
+    margin-left: 20px;
+}
+
+.projects-block > p > span {
+    font-weight: 500;
+}
+
+.projects-block > img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* My skills */
+
+.my_skills-wrap {
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+.my_skills {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skills {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my_photo {
+    width: 50%;
+}
+
+.my_photo > img {
+    width: 100%;
+}
+
+.skills > h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.skill-block > p {
+    color: #727272;
+    font-size:  16px;
+    margin-bottom: 2%;
+}
+
+.progress_indicator {
+    width: 85%;
+    height: 4px;
+    background-color: #C4C4C4;
+    margin-bottom: 4%;
+}
+
+.progress {
+    background-color: #34547A;
+    width: 80%;
+    height: 100%;
+}
+
+
+/* How i work */
+
+.how_i_work-wrap {
+    width: 100%;
+    background-color: #EEEFF1;
+}
+
+.how_i_work {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.how_i_work > h3 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.how_i_work > p {
+    width: 50%;
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    width: 70%;
+}
+
+#video {
+    width: 100%;
+}
+
+.companies-wrap {
+    width: 100%;
+    background-color: white;
+}
+
+.companies {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.microsoft {
+    padding: 10px;
+
 }
